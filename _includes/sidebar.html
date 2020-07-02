@@ -1,0 +1,84 @@
+<!-- Sidebar -->
+  <div id="sidebar">
+    <div class="inner">
+
+      <!-- Search -->
+        <section class="alt">
+        <center>
+           <img src="{{ site.author.avatar-thumb | absolute_url }}" class="avatar" style="width:100px;height:100px;" alt="{{ site.author.name }}" data-echo="{{ site.author.avatar | absolute_url }}"> <br>
+          <p><b>{{ site.author.name }}</b><br>{{ site.author.author-bio }}</p>
+          </center>
+        </section>
+
+      <!-- Menu -->
+        <nav id="menu">
+          <ul>
+               {% if page.title != "Home" %}
+                 <li><a href="{{ '#nobanner' | absolute_url }}"><i class="fa fa-home"></i>&nbsp;&nbsp;&nbsp;&nbsp;Homepage</a></li>    
+              {% else %}
+                <li><b><i class="fa fa-home"></i>&nbsp;&nbsp;&nbsp;&nbsp;Homepage</b></li> 
+              {% endif %} 
+
+              {% if page.title != "Curriculum Vitae" %}
+                 <li><a href="{{ 'resume' | absolute_url }}"><i class="fa fa-file-text-o"></i>&nbsp;&nbsp;&nbsp;&nbsp;Curriculum Vitae</a></li>    
+              {% else %}
+                <li><b><i class="fa fa-file-text-o"></i>&nbsp;&nbsp;&nbsp;&nbsp;Curriculum Vitae</b></li>    
+              {% endif %} 
+
+              {% if page.title != "Research Interests" %}
+                 <li><a href="{{ 'research' | absolute_url }}"><i class="fa fa-magic"></i>&nbsp;&nbsp;&nbsp;&nbsp;Research</a></li>    
+              {% else %}
+                <li><b><i class="fa fa-magic"></i>&nbsp;&nbsp;&nbsp;&nbsp;Research</b></li>  
+              {% endif %} 
+
+              {% if page.title != "Project Repositories" %}
+                 <li><a href="{{ 'repos' | absolute_url }}"><i class="fa fa-code-fork"></i>&nbsp;&nbsp;&nbsp;&nbsp;Repositories</a></li>    
+              {% else %}
+                <li><b><i class="fa fa-code-fork"></i>&nbsp;&nbsp;&nbsp;&nbsp;Repositories</b></li>  
+              {% endif %} 
+
+              {% if page.title != "My Publications" %}
+                 <li><a href="{{ 'publications' | absolute_url }}"><i class="fa fa-paper-plane-o"></i>&nbsp;&nbsp;&nbsp;&nbsp;Publications</a></li>    
+              {% else %}
+                <li><b><i class="fa fa-paper-plane-o"></i>&nbsp;&nbsp;&nbsp;&nbsp;Publications</b></li>  
+              {% endif %} 
+
+              {% if page.title != "Blog Posts" %}
+                 <li><a href="{{ 'blogs' | absolute_url }}"><i class="fa fa-pencil-square-o"></i>&nbsp;&nbsp;&nbsp;&nbsp;Blog Posts</a></li>    
+              {% else %}
+                <li><b><i class="fa fa-pencil-square-o"></i>&nbsp;&nbsp;&nbsp;&nbsp;Blog Posts</b></li>  
+              {% endif %} 
+
+              {% if page.title != "Memes from Outer Space" %}
+                 <li><a href="{{ 'memepage' | absolute_url }}"><i class="fa fa-smile-o"></i>&nbsp;&nbsp;&nbsp;&nbsp;Memes from Outer Space</a></li>   
+              {% else %}
+                <li><b><i class="fa fa-smile-o"></i>&nbsp;&nbsp;&nbsp;&nbsp;Memes from Outer Space</b></li>  
+              {% endif %} 
+          </ul>
+        </nav>
+
+         <!-- Section -->
+        <section>
+          <header class="major">
+            <h2>Get in touch</h2>
+          </header>
+          <div class="sidebar-social">
+
+            <ul>
+            <li><a href="mailto:{{ site.email }}" identifier="Email" target="_blank" rel="nofollow noopener noreferrer" ><i class="fa fa-envelope-o"></i><span>Email</span></a></li>
+            <li><a href="{{ site.author.linkedin }}" identifier="Linkedin" target="_blank" rel="nofollow noopener noreferrer" ><i class="fa fa-linkedin"></i><span>Linkedin</span></a></li>
+            <li><a href="{{ site.author.googlescholar }}" identifier="GScholar" target="_blank" rel="nofollow noopener noreferrer" ><i class="ai ai-google-scholar"></i><span>GScholar</span></a></li>
+            <li><a href="{{ site.author.github }}" identifier="Github" target="_blank" rel="nofollow noopener noreferrer" ><i class="fa fa-github"></i><span>Github</span></a></li>
+            </ul>
+            </div>
+        </section>
+
+      <!-- Footer -->
+
+      <!-- Footer -->
+        <footer id="footer">
+          <p class="copyright">&copy; {{ site.title }}. All rights reserved. Version {{ site.myversion }}. Credits - Photo by <a href="https://unsplash.com/@krisroller?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"><u>Kristopher Roller</u></a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"><u>Unsplash</u></a>. Design: <a href="https://html5up.net">HTML5 UP</a>. Jekyll integration: <a href="https://andrewbanchi.ch">Andrew Banchich</a>. Hosted on Github Pages.</p>
+        </footer>
+
+    </div>
+  </div>

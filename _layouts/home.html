@@ -1,0 +1,106 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="en">
+
+{% include head.html %}
+<body>
+
+    <link rel="stylesheet" type="text/css" href="assets/css/home-overlay-fonts.css" media="print" onload="this.media='all'">
+        <div id="myNav" class="overlay">
+
+        <!-- Button to close the overlay navigation -->
+
+        <!-- Overlay content -->
+        <!-- <div class="overlay-content overlay-img wrapper" 
+        style="background-image: url(assets/images/banner-bg-img-1-thumb.jpg) center center no-repeat; background-size: cover;"
+        data-echo-background="assets/images/banner-bg-img-1.jpg"> -->
+        <div class="overlay-content overlay-img wrapper" 
+        style="background-image: url(assets/images/banner-bg-img-1-thumb.jpg) center center no-repeat; background-size: cover;"
+        data-echo-background="assets/images/banner-bg-img-1.jpg">
+
+
+              <div class="overlay-inside" >
+                <center>
+                          <hr class="banner-line">
+                      <p class="banner-head">SOUMYADEEP DAS</p>
+                          <hr class="banner-line">
+                          <br>
+                      <p class="banner-body">ASTROPHYSICS. AGN.<br>INTERFEROMETRY.</p>
+                              <ul class="banner-icons">
+                              <li><p class="banner-body banner-icon-p"><a href="{{ site.author.linkedin }}" class="icon fa-linkedin" target="_blank" rel="noopener noreferrer" aria-label="Linkedin"></a></p></li>
+                              <li><p class="banner-body banner-icon-p"><a href="{{ site.author.github }}" class="icon fa-github" target="_blank" rel="noopener noreferrer"  aria-label="Github"></a></p></li>
+                              <li><p class="banner-body banner-icon-p"><a href="{{ site.author.googlescholar }}" class="icon-ai ai-google-scholar" target="_blank" rel="noopener noreferrer"  aria-label="Google Scholar"></a></p></li>
+                              <li><p class="banner-body banner-icon-p"><a href="{{ site.author.ads }}" class="icon-ai ai-ads" target="_blank" rel="noopener noreferrer"  aria-label="NASA ADS"></a></p></li></ul>
+
+                          <hr style="height: 1px;" class="banner-line">
+                  </div>
+                  <p class="banner-close banner-head" ><a href="javascript:void(0)" aria-label="Close Banner" class="closebtn btn icon fa-angle-double-down" onclick="closeNav()"></a></p>
+                  </center>
+                </div>
+
+          </div>
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Main -->
+        <div id="main">
+            <div class="inner">
+
+                {% include header.html %}
+                {% include banner.html %}  
+                <h3 style="color: #999999;text-align: center;"><i>When the moon hits your eye like a big pizza pie...thats amore!</i></h3>
+                {{ content }}
+
+
+            </div>
+        </div>
+        {% include sidebar.html %}
+
+    </div>
+
+    {% include footer.html %}
+
+    <script type = "text/javascript" src = "assets/js/jquery.min.js"></script>
+      <script type = "text/javascript" src = "assets/js/jquery-ui.min.js"></script>
+        
+      <script type = "text/javascript" language = "javascript">
+         /* Open */
+            function openNav() {
+              document.getElementById("myNav").style.height = "100%";
+            }
+
+            /* Close */
+            function closeNav() {
+              document.getElementById("myNav").style.height = "0%";
+            } 
+            $(document).ready(function() {
+                if (window.location.hash.indexOf("nobanner") > -1) {
+                  document.getElementById("myNav").style.height = "0%";
+                }
+              });
+
+
+            var prevScrollpos = window.pageYOffset;
+                  window.onscroll = function() {
+                    var currentScrollPos = window.pageYOffset;
+                    if (prevScrollpos < currentScrollPos) {
+                      document.getElementById("myNav").style.height = "0%";
+                    }
+                    prevScrollpos = currentScrollPos;
+                  } 
+
+            $(document).keyup(function(e) {
+                if (e.keyCode == 27 || e.KeyCode == Keys.Down) { document.getElementById("myNav").style.height = "0%"; }   // esc
+              });
+      </script>
+
+
+      {% include lazyload.html %}
+
+</body>
+
+</html>

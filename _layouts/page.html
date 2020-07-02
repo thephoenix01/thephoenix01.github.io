@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="en">
+
+{% include head.html %}
+
+<body>
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Main -->
+        <div id="main">
+            <div class="inner">
+         <!--      {% if page.title != "Home" %}    -->
+                {% include header.html %}
+    <!--           {% endif %} -->
+                <!-- Content -->
+                <section>
+                	<header class="main">
+                		<h1>{{ page.title }}</h1>
+                	</header>
+
+                  {% if page.image %}
+                  
+                	<span class="image main">
+                    <picture>
+                    <source data-srcset="{{ page.image-webp | absolute_url }}" type="image/webp" >
+                  <source data-srcset="{{ page.image | absolute_url }}" type="image/jpeg" > 
+                  <img src="{{ page.image-thumb | absolute_url }}}" alt="{{ page.img-alt }}" data-src="{{ page.image | absolute_url }}"  class="lazyload" />
+               </picture>    
+                  </span>
+                  {% endif %}
+
+                {{ content }}
+
+              </div>
+          </div>
+
+          {% include sidebar.html %}
+
+      </div>
+
+      {% include footer.html %}
+
+
+      {% include lazyload.html %}
+
+
+</body>
+
+</html>
