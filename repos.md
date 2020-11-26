@@ -4,7 +4,7 @@ title: Project Repositories
 description: Repository of academic works, astrophysics projects, linux scripts, latex templates, and digital design by Soumyadeep Das.
 identifer: repopage
 permalink: repos/
-redirect_to: https://soumyadeepdas.gitlab.io/repos/
+redirect_to: https://astro.soumyadeep.me/repos/
 page-level: mainpage
 ---
 <div  class="posts">

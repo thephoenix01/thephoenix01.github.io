@@ -4,7 +4,7 @@ title: Blog Posts
 identifer: blogpage
 page-level: mainpage
 permalink: blogs/
-redirect_to: https://soumyadeepdas.gitlab.io/blogs/
+redirect_to: https://astro.soumyadeep.me/blogs/
 ---
 
 <ul>

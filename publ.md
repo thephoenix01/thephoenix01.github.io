@@ -4,7 +4,7 @@ title: My Publications
 description: Nambiar, S., Das, Soumyadeep, Vig, S., & Gorthi, R. S. S. (2019). Star cluster detection and characterization using generalized Parzen density estimation. MNRAS.
 identifer: publpage
 permalink: publications/
-redirect_to: https://soumyadeepdas.gitlab.io/publications/
+redirect_to: https://astro.soumyadeep.me/publications/
 page-level: mainpage
 ---
 

@@ -10,7 +10,7 @@ image-webp: assets/images/posts/2020-04-27-intro-to-agn/banner.webp
 image-thumb: assets/images/posts/2020-04-27-intro-to-agn/banner-thumb.jpg
 image-alt: Active Galaxtic Nuclei 
 permalink: /posts/2020/04/intro-to-agn/
-redirect_to: https://soumyadeepdas.gitlab.io/posts/2020/04/intro-to-agn/
+redirect_to: https://astro.soumyadeep.me/posts/2020/04/intro-to-agn/
 page-level: postpage
 tags: 
   - agn

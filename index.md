@@ -3,7 +3,7 @@ layout: home
 title: Home
 identifier: homepage
 page-level: homepage
-redirect_to: https://soumyadeepdas.gitlab.io/
+redirect_to: https://astro.soumyadeep.me/
 ---
 
 <section>

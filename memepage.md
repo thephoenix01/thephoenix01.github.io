@@ -5,7 +5,7 @@ description: Memes on struggles in research, bugs in codes, coffee spills, life 
 permalink: memepage/
 identifer: memepage
 page-level: mainpage
-redirect_to: https://soumyadeepdas.gitlab.io/memepage/
+redirect_to: https://astro.soumyadeep.me/memepage/
 ---
 <!-- This the page where memes will appear.
 

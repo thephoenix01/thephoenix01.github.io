@@ -5,7 +5,7 @@ description: Soumyadeep Das. Incoming PhD student at UWA/ICRAR. IDD in Engineeri
 identifer: cvpage
 page-level: mainpage
 permalink: resume/
-redirect_to: https://soumyadeepdas.gitlab.io/resume/
+redirect_to: https://astro.soumyadeep.me/resume/
 ---
 
 <a href="{{ 'assets/docs/SoumyadeepDasCV.pdf' | absolute_url }}" class = "button" target="_blank" rel="noopener noreferrer" >View in PDF Format</a>

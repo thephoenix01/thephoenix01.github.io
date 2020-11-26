@@ -10,7 +10,7 @@ image-webp: assets/images/posts/2020-05-01-aips-guide-v1/banner.webp
 image-thumb: assets/images/posts/2020-05-01-aips-guide-v1/banner-thumb.jpg
 image-alt: AIPS is a software package to support the reduction and analysis of data taken with radio telescopes. 
 permalink: /projects/2020/05/aips-guide-v1/
-redirect_to: https://soumyadeepdas.gitlab.io/projects/2020/05/aips-guide-v1/
+redirect_to: https://astro.soumyadeep.me/projects/2020/05/aips-guide-v1/
 tags: aips guide vla imaging
 page-level: repopage
 ---
